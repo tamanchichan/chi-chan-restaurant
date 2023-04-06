@@ -2,9 +2,11 @@
 
 :root {
   --find-us-button-bg-color: #233ff8;
+  --find-us-button-active-bg-color: #3ac860;
   --find-us-button-color: #fff;
   --header-nav-color: #fff;
   --header-nav-a-color: #fff;
+  --header-nav-a-hover-color: #233ff8;
   --header-title-color: #fff;
   --info-color: #fff;
   --map-bg-color: #e5e5e5;
@@ -178,7 +180,7 @@ table tr td {
 }
 
 .find-us-button:active {
-  background-color: #3ac860;
+  background-color: var(--find-us-button-active-bg-color);
 }
 
 .flex {
@@ -263,7 +265,7 @@ header .header .header-nav nav ul li a {
 }
 
 header .header .header-nav nav ul li a:hover {  
-  color: #233ff8;
+  color: var(--header-nav-a-hover-color);
 }
 
 header .box .content p {text-align: center;}
@@ -277,4 +279,25 @@ header .info h2 {
 header .info p {
   font-size: 20px;
   letter-spacing: 2.5px;
+}
+
+/* footer */
+footer {
+  background-color: #101010;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+footer nav ul li {
+  cursor: pointer;
+  display: inline-flex;
+}
+
+footer nav ul li + li {
+  margin-left: 30px;
+}
+
+footer nav ul li i {
+  font-size: 40px;
 }
