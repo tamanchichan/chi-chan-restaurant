@@ -1,10 +1,26 @@
 @import url('./reset.css');
 
+:root {
+  --header-nav-color: #fff;
+  --header-title-color: #fff;
+}
+
 /* class */
 .container {
   margin-inline: auto;
   width: min(100% - 30px, 1080px);
 }
+
+.header {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  line-height: 50px;
+}
+
+.header-nav {font-size: 0px;}
+
+.header-title {font-size: 0px;}
 
 /* header */
 header {
@@ -13,4 +29,22 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+}
+
+header .header .header-title h1 {
+  color: var(--header-title-color);
+  cursor: pointer;
+  font-size: 40px;
+  text-shadow: 0px 0px 4px #000;
+}
+
+header .header .header-nav nav ul li {
+  color: var(--header-nav-color);
+  display: inline;
+  font-size: 20px;
+  text-shadow: 0px 0px 4px #000;
+}
+
+header .header .header-nav nav ul li + li{
+  margin-left: 20px;
 }
