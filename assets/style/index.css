@@ -1,15 +1,19 @@
 @import url('./reset.css');
 
 :root {
+  --find-us-button-bg-color: #233ff8;
+  --find-us-button-color: #fff;
   --header-nav-color: #fff;
   --header-nav-a-color: #fff;
   --header-title-color: #fff;
   --info-color: #fff;
+  --map-bg-color: #e5e5e5;
   --menu-bg-color: #171c22;
   --menu-color: #fff;
 }
 
 /* html */
+
 table {
   border-spacing: 50px;
 }
@@ -18,6 +22,16 @@ table tr td {
   border-bottom: 3px dotted #fff;
   font-size: 20px;
   width: 300px;
+}
+
+/* id */
+#map {
+  background-color: var(--map-bg-color);
+  border: 1px solid rgba(126, 126, 126, 0.5);
+  border-radius: 10px;
+  margin: 0 auto;
+  height: 400px;
+  width: 800px;
 }
 
 /* class */
@@ -106,6 +120,12 @@ table tr td {
   width: 800px;
 }
 
+.button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
 .container {
   margin-inline: auto;
   width: min(100% - 30px, 1080px);
@@ -138,6 +158,27 @@ table tr td {
   font-size: 30px;
   font-weight: 200;
   letter-spacing: 2.5px;
+}
+
+.find-us {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+
+.find-us-button {
+  background-color: var(--find-us-button-bg-color);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(126, 126, 126, 1);
+  color: var(--find-us-button-color);
+  font-size: 40px;
+  letter-spacing: 2.5px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+.find-us-button:active {
+  background-color: #3ac860;
 }
 
 .flex {
@@ -218,6 +259,11 @@ header .header .header-nav nav ul li + li{
 
 header .header .header-nav nav ul li a {
   color: var(--header-nav-a-color);
+  transition: color 0.25s ease-in-out;
+}
+
+header .header .header-nav nav ul li a:hover {  
+  color: #233ff8;
 }
 
 header .box .content p {text-align: center;}
