@@ -13,7 +13,7 @@
   background-color: rgba(255, 255, 255, 0.85);
   height: 400px;
   justify-content: center;
-  margin: 50px auto 0px auto;
+  margin: 75px auto 0px auto;
   width: 800px;
 }
 
@@ -52,6 +52,7 @@
 }
 
 .header {
+  border-bottom: 2px solid #fff;
   display: flex;
   height: 50px;
   justify-content: space-between;
